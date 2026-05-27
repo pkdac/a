@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>雪商 · 个人博客</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome 图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- ===== 导航栏 ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">雪<span class="logo-accent">.</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">首页</a></li>
+          <li><a href="#about">关于</a></li>
+          <li><a href="#blog">文章</a></li>
+          <li><a href="#projects">作品</a></li>
+          <li><a href="#contact">联系</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="菜单">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== 首页英雄区 ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">👋 你好，我是</p>
+        <h1>雪商</h1>
+        <p class="hero-tagline">全栈开发者 · 开源爱好者 · 终身学习者</p>
+        <p class="hero-desc">
+          热爱用代码创造价值，擅长 Web 全栈开发与系统架构设计。
+          这里记录我的技术思考、项目实践与成长历程。
+        </p>
+        <div class="hero-actions">
+          <a href="#blog" class="btn btn-primary">阅读文章</a>
+          <a href="#contact" class="btn btn-outline">联系我</a>
+        </div>
+        <div class="hero-social">
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="掘金"><i class="fab fa-bilibili"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="邮箱"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring"></div>
+          <div class="avatar-placeholder">雪</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 关于我 ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">关于我</h2>
+      <p class="section-subtitle">About Me</p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <i class="fas fa-running about-icon"></i>
+          <h3>每天坚持跑步</h3>
+          <p>每天 5 公里晨跑，风雨无阻。跑步不仅锻炼身体，更让我学会坚持与专注。</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-book-open about-icon"></i>
+          <h3>热爱阅读</h3>
+          <p>每月精读 2-3 本书，文学、历史、科技都有涉猎。读书是和自己对话的最好方式。</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <h3 class="timeline-title">📅 经历</h3>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024 – 至今</span>
+            <h4>大学在读 · 顺德大学</h4>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2021 – 2024</span>
+            <h4>高中 · 茂名中学</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 生活小常识 ===== -->
+  <section class="section section-bg" id="blog">
+    <div class="container">
+      <h2 class="section-title">生活小常识</h2>
+      <p class="section-subtitle">Life Tips</p>
+
+      <div class="blog-grid">
+
+        <article class="blog-card">
+          <div class="blog-img" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <span class="blog-category">🍳 厨房</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> 2025-03-15</span>
+              <span><i class="far fa-clock"></i> 3 min</span>
+            </div>
+            <h3>煮鸡蛋到底要几分钟？一张图记住所有熟度</h3>
+            <p>溏心蛋 6 分、蛋黄凝固 8 分、全熟 10 分，冷水下锅还是热水？这份指南一次讲清楚。</p>
+            <a href="#" class="blog-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <span class="blog-category">🧹 居家</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> 2025-02-28</span>
+              <span><i class="far fa-clock"></i> 4 min</span>
+            </div>
+            <h3>冰箱收纳的 5 个黄金法则，食材保鲜延长一倍</h3>
+            <p>生熟分开、上熟下生、密封保鲜……学会这些技巧，每周少扔一半菜。</p>
+            <a href="#" class="blog-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+            <span class="blog-category">💪 健康</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> 2025-01-20</span>
+              <span><i class="far fa-clock"></i> 5 min</span>
+            </div>
+            <h3>每天久坐 8 小时？这 3 个动作帮你拯救腰椎</h3>
+            <p>坐姿调整、腰部拉伸、核心激活，不用器材，工位上就能做的护腰小妙招。</p>
+            <a href="#" class="blog-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+            <span class="blog-category">🌿 绿植</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> 2024-12-10</span>
+              <span><i class="far fa-clock"></i> 4 min</span>
+            </div>
+            <h3>新手养绿萝总黄叶？这 4 个坑你肯定踩过</h3>
+            <p>浇水太勤、光照不当、施肥过量……绿萝其实是最好养的植物，避开这几点就好。</p>
+            <a href="#" class="blog-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
+            <span class="blog-category">🧼 清洁</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> 2024-11-05</span>
+              <span><i class="far fa-clock"></i> 3 min</span>
+            </div>
+            <h3>白醋和小苏打的 10 种妙用，家里 90% 的污渍都能搞定</h3>
+            <p>油烟机去油、水垢清除、下水道疏通……天然清洁组合省钱又环保。</p>
+            <a href="#" class="blog-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
+            <span class="blog-category">☕ 饮食</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> 2024-10-18</span>
+              <span><i class="far fa-clock"></i> 3 min</span>
+            </div>
+            <h3>咖啡什么时候喝最好？别再空腹喝第一杯了</h3>
+            <p>皮质醇节律告诉你最佳咖啡时间，下午 2 点后喝咖啡可能影响睡眠质量。</p>
+            <a href="#" class="blog-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="blog-more">
+        <a href="#" class="btn btn-primary">查看更多 <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 我的作品 ===== -->
+  <section class="section section-bg" id="projects">
+    <div class="container">
+      <h2 class="section-title">我的作品</h2>
+      <p class="section-subtitle">Mini Games</p>
+
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <span class="blog-category">🎮 休闲</span>
+          </div>
+          <div class="blog-body">
+            <h3>打地鼠</h3>
+            <p>经典打地鼠小游戏，限时 30 秒，地鼠随机出现，点击得分。纯 HTML + CSS + JS 实现。</p>
+            <a href="#" class="blog-link">在线试玩 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+            <span class="blog-category">🧩 益智</span>
+          </div>
+          <div class="blog-body">
+            <h3>数字华容道</h3>
+            <p>4×4 数字华容道，支持拖拽和点击交换，记录步数与用时，考验逻辑思维。</p>
+            <a href="#" class="blog-link">在线试玩 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+            <span class="blog-category">🎯 射击</span>
+          </div>
+          <div class="blog-body">
+            <h3>太空射击</h3>
+            <p>Canvas 实现的太空射击游戏，飞船移动 + 子弹发射 + 敌人生成，支持移动端触控。</p>
+            <a href="#" class="blog-link">在线试玩 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="blog-more">
+        <a href="#" class="btn btn-primary">查看全部 <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 经典轮播图 ===== -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <h2 class="section-title">经典影像</h2>
+      <p class="section-subtitle">Classic Gallery</p>
+
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide">
+            <img src="https://picsum.photos/seed/mountain/800/500" alt="山峦云海" loading="lazy" />
+            <div class="carousel-caption">
+              <h3>山峦云海</h3>
+              <p>雄奇壮丽的自然之美</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://picsum.photos/seed/cityscape/800/500" alt="城市天际线" loading="lazy" />
+            <div class="carousel-caption">
+              <h3>城市天际线</h3>
+              <p>现代建筑与光影的交响</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://picsum.photos/seed/forest/800/500" alt="森林秘境" loading="lazy" />
+            <div class="carousel-caption">
+              <h3>森林秘境</h3>
+              <p>静谧深处的自然呼吸</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://picsum.photos/seed/ocean/800/500" alt="海洋日落" loading="lazy" />
+            <div class="carousel-caption">
+              <h3>海洋日落</h3>
+              <p>落日熔金的壮丽时刻</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://picsum.photos/seed/starry/800/500" alt="星空银河" loading="lazy" />
+            <div class="carousel-caption">
+              <h3>星空银河</h3>
+              <p>浩瀚宇宙下的渺小与伟大</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="上一张">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn carousel-next" id="carouselNext" aria-label="下一张">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 订阅区 ===== -->
+  <section class="subscribe-section">
+    <div class="container">
+      <div class="subscribe-box">
+        <h2>📬 订阅更新</h2>
+        <p>每月精选文章推送，不错过每一篇干货。无广告，随时退订。</p>
+        <form class="subscribe-form" id="subscribeForm">
+          <input type="email" placeholder="输入你的邮箱地址" required />
+          <button type="submit" class="btn btn-primary">订阅</button>
+        </form>
+        <p class="subscribe-note">已订阅 2,380+ 位读者</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 联系 ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">联系我</h2>
+      <p class="section-subtitle">Get In Touch</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>邮箱</h4>
+              <p>xueshang@example.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <h4>GitHub</h4>
+              <p>github.com/xueshang</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-bilibili"></i>
+            <div>
+              <h4>掘金</h4>
+              <p>juejin.cn/user/xueshang</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>所在城市</h4>
+              <p>中国 · 杭州</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" placeholder="你的名字" required />
+            <input type="email" placeholder="你的邮箱" required />
+          </div>
+          <input type="text" placeholder="主题" required />
+          <textarea rows="5" placeholder="说点什么..." required></textarea>
+          <button type="submit" class="btn btn-primary">发送消息 <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">雪<span class="logo-accent">.</span></a>
+        <p>&copy; 2025 雪商 · 用 ❤️ 构建</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">首页</a>
+        <a href="#about">关于</a>
+        <a href="#blog">文章</a>
+        <a href="#projects">作品</a>
+        <a href="#contact">联系</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="掘金"><i class="fab fa-bilibili"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="RSS"><i class="fas fa-rss"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
